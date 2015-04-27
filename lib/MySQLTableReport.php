@@ -971,7 +971,6 @@ class MySQLTableReport {
     public function get_column_names() {
         return array_map(function ($k) {
                             $column =  ($k[1] != '' ? $k[1] : $k[0]);
-                            $column = MySQLTableReport::remove_schema_name($column);
                             return $column;
                         }, array_values($this->select));
     }
