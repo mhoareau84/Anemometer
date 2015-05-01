@@ -1,4 +1,6 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
+
 /**
  * This is the main loader and controller init script for the Anemometer project
  * It just loads the config, creates a controller and invokes it.  See
